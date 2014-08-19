@@ -5,34 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HAB Regulations &amp; Guidelines - Stratospheric Ballooning Association</title>
   <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="stylesheet" href="app.css" />
   <script src="js/vendor/modernizr.js"></script>
 </head>
 <body>
 
-<nav class="top-bar" data-topbar>
-  <ul class="title-area">
-    <li class="name">
-      <h1><a href="#">Stratospheric Ballooning Association</a></h1>
-    </li>
-  </ul>
-</nav>
+<div class="fixed">
+  <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="#">Stratospheric Ballooning Association</a></h1>
+      </li>
+    </ul>
+  </nav>
+</div>
 
 <section role="main" class="scroll-container">
 <div class="row">
   <div class="large-3 medium-4 columns">
     <div class="sidebar">
-      <ul class="side-nav">
-        <li><a href="#">General</a></li>
-        <li><a href="#">Moored balloons and kites</a></li>
-        <li><a href="#">Amateur rockets</a></li>
-        <li><a href="#">Unmanned free balloons</a></li>
+      <ul class="magellan side-nav" data-magellan-expedition="fixed">
+        <li data-magellan-arrival="101-a"><a href="#101-a">General</a></li>
+        <li data-magellan-arrival="101-b"><a href="#101-b">Moored balloons and kites</a></li>
+        <li data-magellan-arrival="101-c"><a href="#101-c">Amateur rockets</a></li>
+        <li data-magellan-arrival="101-d"><a href="#101-d">Unmanned free balloons</a></li>
       </ul>
     </div>
   </div>
   <div class="large-9 medium-8 columns">
     <h1>FAA Regulations &mdash; Title 14</h1>
     <h2>Part 101 &mdash; Moored balloons, kites, amateur rockets and unmanned free balloons<h2>
-    <h3>Subpart A &mdash; General</h3>
+    <a name="101-a"></a>
+    <h3 data-magellan-destination="101-a">Subpart A &mdash; General</h3>
     <h4>&sect;101.1 Applicability</h4>
     <ol type="a">
       <li>This part prescribes rules governing the operation in the United States, of the following:
@@ -59,7 +63,8 @@
       <li>No person may operate any moored balloon, kite, amateur rocket, or unmanned free balloon in a manner that creates a hazard to other persons, or their property.</li>
       <li>No person operating any moored balloon, kite, amateur rocket, or unmanned free balloon may allow an object to be dropped therefrom, if such action creates a hazard to other persons or their property.</li>
     </ol>
-    <h3>Subpart B &mdash; Moored balloons and kites</h3>
+    <a name="101-b"></a>
+    <h3 data-magellan-destination="101-b">Subpart B &mdash; Moored balloons and kites</h3>
     <h4>&sect;101.11 Applicability</h4>
     <p>This subpart applies to the operation of moored balloons and kites. However, a person operating a moored balloon or kite within a restricted area must comply only with &sect;101.19 and with additional limitations imposed by the using or controlling agency, as appropriate.</p>
     <h4>&sect;101.13 Operating limitations</h4>
@@ -89,7 +94,8 @@
     </ol>
     <h4>&sect;101.19 Rapid deflation device</h4>
     <p>No person may operate a moored balloon unless it has a device that will automatically and rapidly deflate the balloon if it escapes from its moorings. If the device does not function properly, the operator shall immediately notify the nearest ATC facility of the location and time of the escape and the estimated flight path of the balloon.</p>
-    <h3>Subpart C &mdash; Amateur rockets</h3>
+    <a name="101-c"></a>
+    <h3 data-magellan-destination="101-c">Subpart C &mdash; Amateur rockets</h3>
     <h4>&sect;101.21 Applicability</h4>
     <ol type="a">
       <li>This subpart applies to operating unmanned rockets. However, a person operating an unmanned rocket within a restricted area must comply with &sect;101.25(b)(7)(ii) and with any additional limitations imposed by the using or controlling agency.</li>
@@ -169,7 +175,8 @@
         <li>Mishap procedures.</li>
       </ol></li>
     </ol>
-    <h3>Subpart D &mdash; Unmanned free balloons</h3>
+    <a name="101-d"></a>
+    <h3 data-magellan-destination="101-d">Subpart D &mdash; Unmanned free balloons</h3>
     <h4>&sect;101.31 Applicability</h4>
     <p>This subpart applies to the operation of unmanned free balloons. However, a person operating an unmanned free balloon within a restricted area must comply only with &sect;101.33 (d) and (e) and with any additional limitations that are imposed by the using or controlling agency, as appropriate.</p>
     <h4>&sect;101.33 Operating limitations</h4>
@@ -237,7 +244,11 @@
 <script src="js/vendor/jquery.js"></script>
 <script src="js/foundation.min.js"></script>
 <script>
-  $(document).foundation();
+  $(document).foundation({
+    "magellan-expedition": {
+      fixed_top: 45
+    }
+  });
 </script>
 </body>
 </html>
