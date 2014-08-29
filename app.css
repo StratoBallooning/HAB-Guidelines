@@ -1,6 +1,6 @@
 .collapsible {
 	border: 1px solid black;
-	margin-bottom: 1rem;
+	margin-bottom: 1rem !important;
 }
 
 .collapsible > .title {
