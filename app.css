@@ -18,8 +18,3 @@
 .irrelevant {
 	color: #999999;
 }
-
-ul.magellan {
-	min-width: 0 !important;
-	width: 270px;
-}
