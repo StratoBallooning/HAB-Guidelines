@@ -18,3 +18,7 @@
 .irrelevant {
 	color: #999999;
 }
+
+.row {
+	max-width: 75rem;
+}
