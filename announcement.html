@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HIBAL Notice</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="announcement.css">
+	<script src="js/vendor/modernizr.js"></script>
+</head>
+<body>
+	<div class="row">
+		<div class="small-8 columns">
+			<h1>FAR 101 HIBAL Notice
+			</div>
+			<div class="small-4 columns">
+				<p class="text-center">Stratospheric Ballooning Association</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="small-12 columns">
+				<form>
+					<div class="row">
+					<div class="medium-3 columns field-label">
+							<label for="balloon-identification" class="right inline">
+								Balloon Identification:
+							</label>
+						</div>
+						<div class="medium-9 columns">
+							<input type="text" id="balloon-identification" placeholder="ADL-3-A">
+						</div>
+					</div>
+					<div class="row">
+						<div class="medium-3 columns field-label">
+							<label for="notice-type" class="right inline">
+								Notice Type:
+							</label>
+						</div>
+						<div class="medium-9 columns">
+							<div class="row">
+								<div class="small-4 columns">
+									<input type="radio" name="notice-type" value="Prelaunch" id="Prelaunch-type">
+									<label for="Prelaunch-type" class="inline">Prelaunch</label>
+								</div>
+								<div class="small-4 columns">
+									<input type="radio" name="notice-type" value="Launch" id="Launch-type">
+									<label for="Launch-type" class="inline">Launch</label>
+								</div>
+								<div class="small-4 columns">
+									<input type="radio" name="notice-type" value="Cancellation" id="Cancellation-type">
+									<label for="Cancellation-type" class="inline">Cancellation</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="medium-3 columns field-label">
+							<label for="launch-time" class="right inline">
+								Date/Time of Launch:
+							</label>
+						</div>
+						<div class="medium-9 columns">
+							<input type="text" id="launch-time" placeholder="DD MON YY @ HHMMZ">
+						</div>
+					</div>
+					<div class="row">
+						<div class="medium-3 columns  field-label">
+							<label for="launch-location" class="right inline">
+								Launch Site:
+							</label>
+						</div>
+						<div class="medium-5 columns">
+							<input type="text" id="launch-location">
+						</div>
+						<div class="medium-4 columns">
+							<input type="text" id="launch-bra">
+						</div>
+					</div>
+					<div class="row">
+						<div class="medium-3 columns field-label">
+							<label for="max-altitude" class="right inline">
+								Maximum Altitude:
+							</label>
+						</div>
+						<div class="medium-5 columns">
+							<div class="row">
+								<div class="small-4 columns">
+									<input type="radio" name="altitude-type" value="Burst" id="altitude-burst">
+									<label for="altitude-burst" class="inline">Burst</label>
+								</div>
+								<div class="small-4 columns">
+									<input type="radio" name="altitude-type" value="Cutdown" id="altitude-cutdown">
+									<label for="altitude-cutdown" class="inline">Cutdown</label>
+								</div>
+								<div class="small-4 columns">
+									<input type="radio" name="altitude-type" value="Float" id="altitude-float">
+									<label for="altitude-float" class="inline">Float</label>
+								</div>
+							</div>
+						</div>
+						<div class="medium-4 columns">
+							<input type="text" id="max-altitude">
+						</div>
+					</div>
+					<div class="row">
+						<div class="medium-3 columns field-label">
+							<label for="forecast-trajectory" class="right inline">
+								Forecast Trajectory:
+							</label>
+						</div>
+						<div class="medium-9 columns">
+							<input type="text" id="forecast-trajectory" placeholder="">
+						</div>
+					</div>
+					<div class="row">
+						<div class="medium-3 columns field-label">
+							<label for="flight-configuration" class="right inline">
+								Flight Configuration:
+							</label>
+						</div>
+						<div class="medium-9 columns">
+							<textarea type="text" id="flight-configuration" placeholder=""></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="medium-3 columns field-label">
+							<label for="flight-duration" class="right inline">
+								Flight Duration:
+							</label>
+						</div>
+						<div class="medium-9 columns">
+							<input type="text" id="flight-duration" placeholder="">
+						</div>
+					</div>
+					<div class="row">
+						<div class="medium-3 columns field-label">
+							<label for="landing-location" class="right inline">
+								Landing Site:
+							</label>
+						</div>
+						<div class="medium-5 columns">
+							<input type="text" id="landing-location">
+						</div>
+						<div class="medium-4 columns">
+							<input type="text" id="landing-bra">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<script src="js/vendor/jquery.js"></script>
+		<script src="js/foundation.min.js"></script>
+		<script>
+			$(document).foundation();
+		</script>
+	</body>
+	</html>
