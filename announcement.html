@@ -42,7 +42,7 @@
 						<div class="medium-9 columns">
 							<div class="row">
 								<div class="small-4 columns">
-									<input type="radio" name="notice-type" value="Prelaunch" id="Prelaunch-type">
+									<input type="radio" name="notice-type" value="Prelaunch" id="Prelaunch-type" checked="True">
 									<label for="Prelaunch-type" class="inline">Prelaunch</label>
 								</div>
 								<div class="small-4 columns">
@@ -73,10 +73,10 @@
 							</label>
 						</div>
 						<div class="medium-5 columns">
-							<input type="text" id="launch-location">
+							<input type="text" id="launch-location" placeholder="42&deg; 59' 59.25&quot;N, 93&deg; 37' 20.83&quot;W">
 						</div>
 						<div class="medium-4 columns">
-							<input type="text" id="launch-bra">
+							<input type="text" id="launch-bra" placeholder="TNUr296/026">
 						</div>
 					</div>
 					<div class="row">
@@ -88,7 +88,7 @@
 						<div class="medium-5 columns">
 							<div class="row">
 								<div class="small-4 columns">
-									<input type="radio" name="altitude-type" value="Burst" id="altitude-burst">
+									<input type="radio" name="altitude-type" value="Burst" id="altitude-burst" checked="True">
 									<label for="altitude-burst" class="inline">Burst</label>
 								</div>
 								<div class="small-4 columns">
@@ -102,7 +102,7 @@
 							</div>
 						</div>
 						<div class="medium-4 columns">
-							<input type="text" id="max-altitude">
+							<input type="text" id="max-altitude" placeholder="103,000 MSL">
 						</div>
 					</div>
 					<div class="row">
@@ -122,7 +122,7 @@
 							</label>
 						</div>
 						<div class="medium-9 columns">
-							<textarea type="text" id="flight-configuration" placeholder=""></textarea>
+							<textarea type="text" id="flight-configuration" rows="5" placeholder=""></textarea>
 						</div>
 					</div>
 					<div class="row">
@@ -132,7 +132,7 @@
 							</label>
 						</div>
 						<div class="medium-9 columns">
-							<input type="text" id="flight-duration" placeholder="">
+							<input type="text" id="flight-duration" placeholder="2h, 43m">
 						</div>
 					</div>
 					<div class="row">
@@ -142,10 +142,20 @@
 							</label>
 						</div>
 						<div class="medium-5 columns">
-							<input type="text" id="landing-location">
+							<input type="text" id="landing-location" placeholder="42&deg; 50' 14.73&quot;N, 93&deg; 08' 23.71&quot;W">
 						</div>
 						<div class="medium-4 columns">
-							<input type="text" id="landing-bra">
+							<input type="text" id="landing-bra" placeholder="TNUr333/004">
+						</div>
+					</div>
+					<div class="row">
+						<div class="medium-3 columns field-label">
+							<label for="flight-Notes" class="right inline">
+								Flight Notes:
+							</label>
+						</div>
+						<div class="medium-9 columns">
+							<textarea type="text" id="flight-Notes" rows="5" placeholder=""></textarea>
 						</div>
 					</div>
 				</form>
