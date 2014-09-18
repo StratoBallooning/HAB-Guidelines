@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HAB Regulations &amp; Guidelines - Stratospheric Ballooning Association</title>
+		<link rel="stylesheet" href="css/foundation.css" />
+		<link rel="stylesheet" href="css/app.css" />
+		<script src="js/vendor/modernizr.js"></script>
+	</head>
+	<body>
+
+		<script type="text/x-handlebars">
+			<div class="fixed">
+				<nav class="top-bar" data-topbar>
+					<ul class="title-area">
+						<li class="name">
+							<h1>{{#link-to 'index'}}SBA HAB Regulations &amp; Guidelines{{/link-to}}</h1>
+						</li>
+					</ul>
+					<section class="top-bar-section">
+						<ul class="left">
+							{{#link-to 'faa' tagName='li' href=false}}<a {{bind-attr href="view.href"}}>FAA</a>{{/link-to}}
+							<li class="has-dropdown">
+								{{#link-to 'fcc'}}FCC{{/link-to}}
+								<ul class="dropdown">
+									{{#link-to 'fcc.unlicensed' tagName='li' href=false}}<a {{bind-attr href="view.href"}}>Unlicensed</a>{{/link-to}}
+									{{#link-to 'fcc.licensed' tagName='li' href=false}}<a {{bind-attr href="view.href"}}>Licensed</a>{{/link-to}}
+								</ul>
+							</li>
+						</ul>
+						<ul class="right">
+							<li class="has-dropdown">
+								<a href="#">Contact</a>
+								<ul class="dropdown">
+									<li><a href="mailto:eharstad@stratoballooning.org">E-mail</a></li>
+									<li><a href="https://gitter.im/StratoBallooning/HAB-Guidelines">Discuss</a></li>
+									<li><a href="https://github.com/StratoBallooning/HAB-Guidelines/issues">Issues</a></li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</nav>
+				{{bread-crumbs}}
+			</div>
+			<section role="main" class="scroll-container">
+				{{outlet}}
+			</section>
+			<footer>
+				<div class="row">
+					<div class="small-12 columns">
+						&copy;2014 Stratospheric Ballooning Association
+					</div>
+				</div>
+			</footer>
+		</script>
+
+		<script type="text/x-handlebars" data-template-name="index">
+			blah
+		</script>
+		
+		<script src="js/vendor/jquery.js"></script>
+		<script src="js/foundation/foundation.min.js"></script>
+		<script src="js/vendor/handlebars-1.1.2.js"></script>
+  	<script src="js/vendor/ember-1.7.0.js"></script>
+  	<script src="js/vendor/ember-data.js"></script>
+  	<script src="js/vendor/ember-breadcrumbs.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>
