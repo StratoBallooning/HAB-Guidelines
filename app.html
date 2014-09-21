@@ -55,8 +55,13 @@
 			</footer>
 		</script>
 
-		<script type="text/x-handlebars" data-template-name="index">
-			blah
+		<script type="text/x-handlebars" data-template-name="titles">
+			{{#each}}
+				<h2>Title {{number}}: {{name}}</h2>
+				{{#each part in parts}}
+					<h3>Part {{part.number}}: {{part.name}}</h3>
+				{{/each}}
+			{{/each}}
 		</script>
 		
 		<script src="js/vendor/jquery.js"></script>
